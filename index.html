@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Almarex" />
+    <meta name="keywoard" content="HTML CSS JS JavaScript" />
+    <meta
+      name="description"
+      content="Creating a webpage with input validation"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+"
+    />
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="section-center">
+        <nav class="nav">
+          <h1>Logo</h1>
+          <div class="btns">
+            <button type="button" class="btn-bar">
+              <i class="fas fa-bars"></i>
+            </button>
+            <button type="button" class="btn-times">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </nav>
+
+        <div class="links-container">
+          <div class="nav-links-wrapper">
+            <ul class="nav-links">
+              <li><a class="link" href="#">Home</a></li>
+              <li><a class="link" href="#">About</a></li>
+              <li><a class="link" href="#">Service</a></li>
+              <li><a class="link" href="#">Products</a></li>
+              <li><a class="link" href="#">Products</a></li>
+              <li><a class="link" href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="" class="contact-button">
+          <div>
+            <span class="bg"></span>
+            <span class="base"></span>
+            <span class="text">
+              résume
+            </span>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- form validation -->
+
+    <div class="container">
+      <div class="form-wrapper p-5" style="width: 500px; height: auto;">
+        <h1 class="mb-3">Registration Form</h1>
+        <form action="./success.html" id="form" class="row">
+          <div class="col-md-6 mb-3 input-state">
+            <label for="username" class="form-label">username</label>
+            <input type="text" id="username" class="form-control" />
+            <i class="fas fa-exclamation"></i>
+            <i class="fas fa-check-circle"></i>
+            <small></small>
+          </div>
+          <div class="col-md-6 mb-3 input-state">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" />
+            <i class="fas fa-exclamation"></i>
+            <i class="fas fa-check-circle"></i>
+            <small></small>
+          </div>
+          <div class="col-12 mb-3 input-state">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" id="address" class="form-control" />
+            <i class="fas fa-exclamation"></i>
+            <i class="fas fa-check-circle"></i>
+            <small></small>
+          </div>
+          <div class="col-md-6 mb-3 input-state">
+            <label for="phoneNumber" class="form-label">phone Number</label>
+            <input type="number" id="number" class="form-control" />
+            <div>
+              <i class="fas fa-exclamation"></i>
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <small></small>
+          </div>
+          <div class="col-md-6 mb-3 eye-icons input-state">
+            <label for="password" class="form-label">password</label>
+            <input type="password" id="password" class="form-control" />
+            <div class="hide-btns showHide-1">
+              <i class="fas fa-eye visible-icon-1"></i>
+              <i class="fas fa-eye-slash hidden-icon hidden-icon-1"></i>
+            </div>
+            <small></small>
+          </div>
+          <!-- <label for="male">Male</label> -->
+          <div class="col-12 mb-3 eye-icons input-state">
+            <label for="confirmPassword" class="form-label">
+              confirm Password
+            </label>
+            <input type="password" id="confirmPassword" class="form-control" />
+            <div class="hide-btns">
+              <i class="fas fa-eye-slash visible-icon-2"></i>
+              <i class="fas fa-eye hidden-icon hidden-icon-2"></i>
+            </div>
+            <small></small>
+          </div>
+          <div class="mt-3 mb-3">
+            <h5 class="">Gender</h5>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+          </div>
+          <div class="col-12 mb-3">
+            <button type="submit" class="btn btn-large btn-primary">
+              submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
